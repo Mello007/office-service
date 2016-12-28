@@ -46,9 +46,9 @@ priceRequest.onload = function (){             //Функция которая �
     itemsTable.innerHTML = '';      //очищаем таблицу от устаревших данных
     parsedItem._embedded.case.forEach(function(item)  {
         var itemNameElement = document.createElement('td'); //создаем элемент ячейку с названием для таблицы
-        itemNameElement.innerHTML =  item['name'] ;     //внедряем название предмета, полученное с сервера
+        itemNameElement.innerHTML =  item['kindOfCase'] ;     //внедряем название предмета, полученное с сервера
         var itemPriceElement = document.createElement('td');
-        itemPriceElement.innerHTML = item['experience'];
+        itemPriceElement.innerHTML = item['advocate'];
         var serviceOffice = document.createElement('td');
         serviceOffice.innerHTML = item['serviceOffice'];
         var court = document.createElement('td');
